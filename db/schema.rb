@@ -11,5 +11,9 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 1) do
-
+  create_table "students", force: :cascade do |stu|
+    stu.string "name"
+    stu.integer "grade"
+    stu.datetime "birthdate"
+  end
 end
